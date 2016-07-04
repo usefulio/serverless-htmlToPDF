@@ -1,0 +1,25 @@
+{
+  "name": "htmlToPdf",
+  "runtime": "nodejs4.3",
+  "description": "Serverless Lambda function for project: htmlToPdf",
+  "customName": false,
+  "customRole": false,
+  "handler": "services/htmlToPdf/handler.handler",
+  "timeout": 6,
+  "memorySize": 1024,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": []
+  },
+  "endpoints": [],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
+}
